@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTubeCraft</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    body {
+      margin: 0;
+      background: #1e1e1e;
+      color: #fff;
+      font-family: 'VT323', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    #tip {
+      margin-top: 16px;
+      color: #ffe347;
+      font-size: 20px;
+      text-shadow: 1px 1px #000;
+      text-align: center;
+      max-width: 90%;
+    }
+  </style>
+</head>
+<body>
+  <h1>📺 Loading YouTubeCraft...</h1>
+  <div id="tip">"Herobrine vừa click vào video mới nhất của bạn..."</div>
+
+  <script>
+    const tips = [
+      "Herobrine vừa click vào video mới nhất của bạn...",
+      "Redirecting through Nether portal...",
+      "Loading... but in 144p.",
+      "Villager đang xem Shorts 🤨",
+      "Your diamonds got demonetized 😭",
+      "Skeleton skipped your ad.",
+    ];
+    document.getElementById("tip").textContent =
+      tips[Math.floor(Math.random() * tips.length)];
+
+    setTimeout(() => {
+      window.open("https://youtube.com", "_blank");
+      window.close();
+    }, 2000);
+  </script>
+</body>
+</html>

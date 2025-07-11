@@ -1,0 +1,16 @@
+
+{
+  "name": "YouTubeCraft",
+  "short_name": "YT Craft",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1e1e1e",
+  "theme_color": "#ff0000",
+  "icons": [
+    {
+      "src": "https://www.youtube.com/s/desktop/e32be5f4/img/favicon_144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
